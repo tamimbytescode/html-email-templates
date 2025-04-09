@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Newsletter Template</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body, table, td {
+      font-family: "Oswald", serif;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border-spacing: 0;
+    }
+    .container {
+      width: 660px;
+      margin: 0 auto;
+      border: 2px solid #2B354E;
+      border-radius: 15px;
+      background-color: #F3F3F3;
+    }
+    .header, .footer {
+      text-align: center;
+      padding: 25px 0 5px;
+    }
+    .header {
+      background-color: #F3F3F3;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .content {
+      padding: 20px;
+        font-size: 18px;
+      line-height: 1.6;
+    }
+    .article {
+      margin-bottom: 20px;
+    }
+       .quote {
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #F3F3F3;
+      border-left: 5px solid #2B354E;
+      font-style: italic;
+      color: #333;
+    }
+    .button {
+      margin: 15px auto;
+      padding: 10px 20px;
+      background-color: #303030;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      text-align: center;
+        display: block;
+        width: 250px;
+    }
+    .social-links {
+      text-align: center;
+      margin: 15px 0;
+        background: #303030; 
+        color: #fff;
+        border: 2px solid #303030;
+        border-radius:0 0 12px 12px;
+        
+        
+        
+        
+    }
+    .social-links img {
+      margin: 0 5px 20px;
+    }
+     
+      
+    .tick-list {
+      padding: 5px 20px;
+      line-height: 1.8;
+    }
+    .tick-list input[type="checkbox"] {
+      margin-right: 10px;
+    }
+      
+      
+    @media only screen and (max-width: 580px) {
+      .container {
+        width: 95%;
+      }
+      .desktopview {
+        display: none !important;
+      }
+      .mobileview {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table class="container">
+    <tr>
+      <td class="header">
+        <a href="https://learndrive.org/" target="_blank"><img src="https://learndrive.org/wp-content/uploads/2024/10/Logo-1.png" alt="Learndrive Logo" width="170"></a>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="content">
+        <h1 style="text-align: center;">Your Compliance Solution <strong style="color: #7039ED;">Starts Here </strong></h1>
+        <h2 style="font-weight: 400;text-align: center;">Special Offer: <br>Purchase the bundle at <span style="text-decoration: line-through;">£60.00 </span> <strong style="color: red;"> £19.99 Only,</strong> <br>Certificate Included!</h2>
+      
+      
+        
+<!--
+        <div class="quote">
+"Illness is not something a person has, but rather a process in which they are caught." – R.D. Laing, Scottish psychiatrist        </div>
+        
+-->
+
+        
+        
+        
+        <p>
+        Dear <strong> {{ contact.FIRSTNAME }}</strong>!
+        </p>
+        
+        <p>
+Navigating today’s complex regulatory landscape can be challenging, but staying compliant doesn’t have to be. At Learndrive courses, we got you covered with our up to date effective eLearning courses designed to keep your business compliant and your team confident.
+        </p>
+        <p>
+<strong>Why Choose Us?</strong>
+       </p>
+       <p>
+✔ Expertly Designed Content
+       </p>
+       <p>
+
+✔ Fully Online and Flexible Learning
+       
+       </p>
+       <p>
+
+✔ Certificates of Completion to Showcase Compliance        
+       </p>
+       
+        <p> 
+       <strong> Our Compliance Solution Pack:</strong>
+        </p> 
+        <p> 
+            <strong style="color: #FE0E0E">Course 01: Sexual Harassment Awareness Training</strong>: 
+Comprehensive training to ensure Compliance with workplace harassment laws and foster a respectful work environment.
+
+        </p> 
+        <p>
+            <strong style="color: #FE0E0E">Course 02: Asbestos Awareness
+</strong>: 
+Learn the risks associated with asbestos and the Compliance protocols to manage safety effectively.
+ 
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 03: Food Hygiene and Safety Level 3</strong>: 
+Ensure Compliance with food safety regulations, focusing on hygiene practices and HACCP principles.
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 04: Fire Safety at Work</strong>:  
+Training to achieve fire safety Compliance, covering emergency planning and fire prevention measures.
+ 
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 05: UK Employment Law</strong>: 
+In-depth knowledge of UK Employment Law to meet legal Compliance and handle workplace issues effectively.
+ 
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 06: Manual Handling
+</strong>: 
+Understand safe manual handling practices to maintain Compliance with health and safety regulations.
+ 
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 07: Workplace Health & Safety
+</strong>: 
+Develop a robust understanding of Compliance in workplace health and safety to reduce risks and hazards.
+
+ 
+        </p>
+        
+        <p>
+            <strong style="color: #FE0E0E">Course 08: HACCP
+</strong>:
+Ensure Compliance in food production with HACCP training, focusing on hazard control and food safety management.
+ 
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 09: ISO 9001:2015 Quality Management
+</strong>: 
+Achieve quality management Compliance by learning the ISO 9001:2015 standards and their applications.
+
+ 
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 10: Mental Health First Aid
+</strong>: 
+Promote mental well-being and achieve Compliance with workplace mental health standards.
+ 
+        </p>
+        <p>
+            <strong style="color: #FE0E0E">Course 11: Data Protection (GDPR)
+</strong>
+
+Master GDPR Compliance by understanding data protection laws and implementing them effectively in your organization.
+ 
+        </p>
+        
+        
+        
+        
+        <p style="font-size:27px;">
+            Special Offer: Purchase the bundle at <span style="text-decoration: line-through;">£60.00 </span>  <strong>£19.99</strong> Only!
+ 
+        </p>
+        
+        
+        <p>
+Act now to keep your workplace compliant and your team informed!
+ 
+        </p>
+        
+        
+<!--
+        <p>
+What Can You Do?
+        </p>
+        <p>
+            💚 Super Tip 1: : Talk About It: Whether with a colleague, manager, or a mental health professional, opening up is powerful. Admitting you're overwhelmed or struggling doesn't make you weak—it makes you honest.
+
+        
+       </p>
+        <p>
+            💚 Super Tip 2: Set Boundaries: Prioritise your well-being by defining clear limits on your workload.
+
+        
+       </p>
+        <p>
+💚 Super Tip 3: Access Resources: Many workplaces offer mental health programs or counseling services—don’t hesitate to use them. We also have our stoves of resources here at Learndrive courses. You can check ‘em out here: Mental Health Resources
+
+        
+       </p>
+        
+       
+-->
+       
+       
+<!--
+        <p>
+        Check out some of the articles on Workplace Stress Management: 
+       </p>
+        <p>
+            <strong style="color: #FE0E0E">Bullying in The Workplace</strong>: Types, Causes, Compensation, and More: Workplace bullying impacts mental health, productivity, and morale, yet it remains widely misunderstood and underestimated in many organizations… (Read More)
+       </p>
+        <p>
+            <strong style="color: #FE0E0E">Workplace stress</strong>: A neglected aspect of mental health wellbeing: Workplace stress and associated mental ill-health is a fact that every employer and employee lives with on a daily basis. However, it often is the case that neither are aware of the issues fully and nor are well informed about its ramifications…(Read More)
+       </p>
+          <p><strong style="color: #FE0E0E">The 6 leading causes of burnout at work (and a free action plan)</strong>: Employee burnout is a state of chronic physical and emotional exhaustion, often accompanied by feelings of cynicism, detachment, and low productivity. In order to prevent employee burnout from happening, you first need to…(Read More)
+    
+       </p>
+        
+        <p>
+            <strong style="color: #FE0E0E">What to do when your boss says everything is a priority</strong>: Demanding or dare I say it, unreasonable, bosses are something I come across every day through my work with middle and senior managers. When we dig down to the root cause of whatever issue…(Read More) 
+        
+       </p>
+       
+    
+-->
+
+<!--
+        <p style="margin: 50px 0 0;">
+       Latest from Learndrive Courses: 
+       </p>
+       <p>
+         Course Name 1:
+  
+       </p>
+         <p>
+           Course Name 2:
+
+       </p>
+         <p>
+           Blog 1
+
+       </p>
+         <p style="margin: 0 0 50px;">
+           Blog 2
+
+       </p>
+        
+        <p>
+Check out Our Mental Health Diploma course and Use coupon code <strong>MENTALHEALTH </strong> to Get <strong>75% Discount</strong> for you and your team!        
+       </p>
+        <p>
+ Let’s Make a Difference Together and Today!
+       </p>
+-->
+        
+        
+        
+        
+        
+        
+        <div class="article">
+          
+          <a href="https://learndrive.org/product/compliance-solution-bundle/" class="button" target="_blank" style="color: #fff;">Get The Discount</a>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="social-links">
+        <h3><a href="https://learndrive.org/" target="_blank" style="text-decoration: none;color: #fff">Learndrive</a></h3>
+        <p>10 East Stour Way, Ashford TN24 OSX, UK</p>
+        <p>Contact us at info@learndrive.org</p>
+        <p>Follow us on:</p>
+        <a href="https://www.facebook.com/learndriveonlinecourses/"  target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook" width="30"></a>
+        <a href="https://www.linkedin.com/company/learndrive/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="Twitter" width="30"></a>
+        <a href="https://www.instagram.com/learndrive_org/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" alt="Instagram" width="30"></a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

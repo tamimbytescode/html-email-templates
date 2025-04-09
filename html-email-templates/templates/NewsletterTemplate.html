@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Newsletter Template</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body, table, td {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border-spacing: 0;
+    }
+    .container {
+      width: 660px;
+      margin: 0 auto;
+      border: 2px solid #2B354E;
+      border-radius: 15px;
+      background-color: #ffffff;
+    }
+    .header, .footer {
+      text-align: center;
+      padding: 25px 0 5px;
+    }
+    .header {
+      background-color: #ffffff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .content {
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .article {
+      margin-bottom: 20px;
+    }
+       .quote {
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+      border-left: 5px solid #2B354E;
+      font-style: italic;
+      color: #333;
+    }
+    .button {
+      margin: 15px auto;
+      padding: 10px 20px;
+      background-color: #303030;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      text-align: center;
+        display: block;
+    }
+    .social-links {
+      text-align: center;
+      margin: 15px 0;
+        background: #303030; 
+        color: #fff;
+        border: 2px solid #303030;
+        border-radius:0 0 12px 12px;
+        
+        
+        
+        
+    }
+    .social-links img {
+      margin: 0 5px 20px;
+    }
+     
+      
+    .tick-list {
+      padding: 5px 20px;
+      line-height: 1.8;
+    }
+    .tick-list input[type="checkbox"] {
+      margin-right: 10px;
+    }
+      
+      
+    @media only screen and (max-width: 580px) {
+      .container {
+        width: 95%;
+      }
+      .desktopview {
+        display: none !important;
+      }
+      .mobileview {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table class="container">
+    <tr>
+      <td class="header">
+        <a href="https://learndrive.org/" target="_blank"><img src="https://learndrive.org/wp-content/uploads/2024/10/Logo-1.png" alt="Learndrive Logo" width="170"></a>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="content">
+        <h1 style="text-align: center;">Newsletter Learndrive Courses</h1>
+        
+        
+        <div class="quote">
+          It's not just a women's issue — it’s a human rights issue - Kazem
+        </div>
+        
+        
+        
+        
+        <p>
+        Dear <strong> {{ contact.FIRSTNAME }}</strong>!
+        </p>
+        
+        <p>
+            The UK has recently implemented significant reforms to address sexual harassment in the workplace, emphasising a proactive approach to prevention. The Worker Protection (Amendment of Equality Act 2010) Act 2023, effective from October 26, 2024, introduces a new legal duty for employers to take "reasonable steps" to prevent sexual harassment of their employees.
+        </p>
+        <p>
+            Here’s a breakdown of the key differences between the previous law and the new law:
+        </p>
+        <p> <strong>
+            1. Introduction of a Preventative Duty</strong>
+        </p>
+        <p>
+            Old Law: Employers were primarily responsible for addressing harassment only after an incident had been reported. 
+        </p>
+        <p>
+            <strong>New Law:</strong>  Employers now have a proactive duty to prevent sexual harassment in the workplace by taking “reasonable steps” to reduce the risk of harassment before it occurs. This involves implementing anti-harassment policies, conducting risk assessments, and providing regular training. 
+        
+       </p>
+        <p><strong>
+            2. Responsibility for Third-Party Harassment</strong>
+        
+       </p>
+        <p>
+Old Law: Employers were not explicitly required to protect employees from harassment by third parties, such as clients, customers, or vendors unless there was evidence of repeated incidents and the employer failed to take preventive action.
+        
+       </p>
+        <p>
+<strong>New Law:</strong>  The reform reinstates employer responsibility to protect employees from harassment by third parties. Employers are expected to take reasonable measures to prevent third-party harassment, even if it involves individuals who are not directly employed by the company.
+        
+       </p>
+        <p><strong>
+            3. Increased Penalties and Tribunal Powers</strong>
+       </p>
+        <p>
+Old Law: Compensation in cases of harassment was based on the specifics of each case, and tribunals did not have additional authority to increase penalties for failure in preventive duties.
+       </p>
+        <p>
+<strong>New Law:</strong>  Employment tribunals can now increase compensation by up to 25% if an employer is found to have breached the preventative duty to prevent sexual harassment.
+       </p>
+        <p><strong>
+            4. Role of the Equality and Human Rights Commission (EHRC) </strong>       
+       </p>
+        <p>
+Old Law: The EHRC had general enforcement powers to address breaches of equality and anti-discrimination law but was limited in its role concerning proactive prevention of harassment.
+        
+       </p>
+        <p>
+<strong>New Law:</strong> The EHRC now has enhanced authority to investigate and enforce compliance with the new preventative duty. It can take action against employers who fail to implement adequate measures to prevent harassment, broadening the scope of its regulatory reach.
+        
+       </p>
+        <p>
+Impact of the Reform on Employees
+       </p>
+       
+        <div class="tick-list">
+          <h2>So, what are the impacts now?</h2>
+          <p><input type="checkbox"> Well, the reform offers greater protections to employees, reinforcing their right to a safe and respectful work environment.</p>
+          <p><input type="checkbox"> Employees now have clearer channels to report harassment and can expect stronger support from their employers. </p>
+          <p><input type="checkbox"> Additionally, by holding employers accountable for third-party harassment, the law recognises the unique risks employees may face when dealing with clients, customers, and other external parties. This added layer of protection empowers employees to speak up, knowing that their concerns will be taken seriously and addressed.</p>
+          
+        </div>
+        
+        <p>
+Want a Training Solution? Explore our comprehensive <a href="https://learndrive.org/course/sexual-harassment-awareness-training/" target="_blank" style="text-decoration: none;font-weight: 600;">Sexual Harassment Awareness Training</a> course. Equip your team with the tools to identify, prevent, and address workplace harassment effectively. Sign up using <strong>AWARENESS</strong> and Get <strong>85% OFF</strong> for you and your team!        
+       </p>
+        <p>
+ Let’s Make a Difference Together and Today!
+       </p>
+        
+        
+        
+        
+        
+        
+        <div class="article">
+          
+          <a href="https://learndrive.org/?add-to-cart=50302" class="button" target="_blank">Explore Now</a>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="social-links">
+        <h3><a href="https://learndrive.org/" target="_blank" style="text-decoration: none;color: #fff">Learndrive</a></h3>
+        <p>10 East Stour Way, TN25 4QN, Kent</p>
+        <p>Contact us at info@learndrive.org</p>
+        <p>Follow us on:</p>
+        <a href="https://www.facebook.com/learndriveonlinecourses/"  target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook" width="30"></a>
+        <a href="https://www.linkedin.com/company/learndrive/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="Twitter" width="30"></a>
+        <a href="https://www.instagram.com/learndrive_org/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" alt="Instagram" width="30"></a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

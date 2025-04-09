@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learn More, Spend Less</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+      
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+    body, table, td {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+    font-size: 20px;
+    line-height: 35px;
+    }
+      
+    table {
+      border-spacing: 0;
+      width: 100%;
+    }
+    .container {
+      max-width: 660px;
+      margin: 0 auto;
+      border: 2px solid #2B354E;
+      border-radius: 15px;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+    
+      .hero img{
+          width: 100%;
+      }
+    .promo {
+      text-align: left;
+        padding: 20px;
+    }
+      
+      
+  .head1{
+      text-align: center;
+      padding: 15px 10px;
+      background: #D3EA94;
+      font-size: 16px;
+  }
+      
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 1%;
+    background: #FFFBF7;
+    }
+      
+    .product{
+      flex: 0 0 calc(33.33% - 10px); /* 3 columns for larger screens */
+      box-sizing: border-box;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1%;
+      background-color: #f9f9f9;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    .product h4 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+        line-height: 25px;
+    }
+    .product p {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+    .product a {
+      display: inline-block;
+      padding: 8px 19px;
+      background-color: #635BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 17px;
+    }
+    .certificate-section, .id-card-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 40px;
+    }
+    .certificate-section img, .id-card-section img {
+      max-width: 45%;
+      border-radius: 10px;
+    }
+    .certificate-content, .id-card-content {
+      flex: 1;
+    }
+    .certificate-content h4, .id-card-content h4, .certcont {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .certificate-content p, .id-card-content p, .certcont {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    
+    .button {
+      display: block;
+      margin: 15px auto;
+      padding: 10px 20px;
+      background-color: #635BFF;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 25px;
+      text-align: center;
+        width: 200px;
+    }
+      
+      
+      .belowbanner{
+      background: #303030; 
+      }
+    
+      .belowbanner img{
+      width: 100%; 
+      }
+    
+  .footer{
+      background: #303030;
+      color: #fff;
+  }
+      
+      
+   @media only screen and (max-width: 580px) {
+      .products {
+        display: block;
+      }
+      .product {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+      }
+      .certificate-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .certificate-section img {
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
+      .certificate-content, .certcont {
+        padding: 10px;
+        text-align: center;
+      }
+    }   
+      
+      
+  
+  </style>
+</head>
+<body>
+  <table class="container">
+   
+<!--
+    <tr>
+      <td class="hero">
+       
+        <img src="https://img.mailinblue.com/8410637/images/content_library/original/676aa3c2264150a8c665f1ac.gif" alt="">
+      </td>
+    </tr>
+-->
+    <tr>
+      <td class="hero">
+      
+       
+        <h1 style="text-align: center; padding: 3%; background:#635BFF; color: white;margin-bottom: 3%;"> Learn More, Spend Less!</h1>
+      
+        <h2 style="text-align: center;margin-bottom: 1%;line-height: 45px;">Any Course for <strong style="color:#7039ED;">£5.99</strong> + <br>(PDF Certificate Free)
+
+        </h2>
+        
+        <h3 style="text-align: center;margin-bottom: 3%;">Use Coupon Code: <strong style="color: #7039ED;">SPECIAL5</strong></h3>
+      
+      
+      
+      
+      </td>
+    </tr>
+    <tr>
+      <td class="promo">
+      
+      
+       
+<p>Dear <strong>{{ contact.FIRSTNAME }}</strong>!</p>
+
+<p style="padding: 15px 0;"> For a limited time, you can grab any course for just £5.99, and we’re throwing in a FREE PDF certificate too! </p>
+
+
+
+<p style="padding: 15px 0;">Here’s why you don’t want to miss this deal: </p>
+
+<p>✔️ Learn in-demand skills that boost your career
+</p>
+<p>✔️ Get a recognised certificate to enhance your resume
+</p>
+<p>✔️ Learn at your own pace from anywhere
+</p>
+
+<p>✔️ Study anytime, anywhere – at your own pace
+</p>
+
+
+
+<p style="padding: 15px 0;">But hurry—this offer won’t last forever! 
+
+
+</p>
+
+
+        
+        <a href="https://learndrive.org/all-courses/" class="button" style="text-decoration: none;color: #fff;" target="_blank">Explore Now</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="head1">
+        <h2>Explore Top-Tier Web Development Courses</h2>
+      </td>
+    </tr>
+    
+    <!-- Products Row -->
+    <tr>
+      <td>
+        <div class="products">
+          <!-- Product 1 -->
+          <div class="product">
+            <img src="https://img.mailinblue.com/8410637/images/content_library/original/676a733d9b15d4e6cddb0857.png" alt="Product 1">
+            <h4>Web Development (HTML, CSS, SaaS, NPM)</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/web-development-html-css-saas-npm/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 2 -->
+          <div class="product">
+            <img src="https://img.mailinblue.com/8410637/images/content_library/original/676a733dbfd9315a2c38af68.png" alt="Product 2">
+            <h4>Wordpress from Scratch</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/wordpress-from-scratch/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 3 -->
+          <div class="product">
+            <img src="https://img.mailinblue.com/8410637/images/content_library/original/676a733deca963b9fd590601.png" alt="Product 3">
+            <h4>Turn Raspberry Pi into A Web Server</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/turn-raspberry-pi-into-a-web-server/" target="_blank">Explore Now</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="head1">
+        <h2> Health & Care Courses</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="products">
+          <!-- Product 1 -->
+          <div class="product">
+            <img src="https://learndrive.org/wp-content/uploads/2022/09/Level-123-Health-and-Social-Care-with-Care-Certificate-310x174.png" alt="Product 1">
+            <h4>Level 1,2,3 Health and Social Care with Care Certificate</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/level-123-health-and-social-care-with-care-certificate-standards-1-to-15/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 2 -->
+          <div class="product">
+            <img src="https://learndrive.org/wp-content/uploads/2024/02/Level-5-Child-Care-Diploma-for-the-Children-and-Young-Peoples-Workforce-310x174.png" alt="Product 2">
+            <h4>Level 5 Child Care Diploma for the Children and Young People’s Workforce</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/level-5-child-care-diploma-for-the-children-and-young-peoples-workforce/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 3 -->
+          <div class="product">
+            <img src="https://learndrive.org/wp-content/uploads/2023/12/Communication-in-Care-Settings-460x259.png" alt="Product 3">
+            <h4>Communication in Care Settings</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/communication-in-care-settings/" target="_blank">Explore Now</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="head1">
+        <h2>Master Essential Workplace Skills and Creative Arts</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="products">
+          <!-- Product 1 -->
+          <div class="product">
+            <img src="https://img.mailinblue.com/8410637/images/content_library/original/676006d4622a6da709d09204.jpg" alt="Product 1">
+            <h4>Workplace Conflict Management</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/workplace-conflict-management/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 2 -->
+          <div class="product">
+            <img src="https://img.mailinblue.com/8410637/images/content_library/original/676006d5fc62f86c461ea899.png" alt="Product 2">
+            <h4>Risk Assessment at Work</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/risk-assessment-at-work/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 3 -->
+          <div class="product">
+            <img src="https://img.mailinblue.com/8410637/images/content_library/original/676006d5f30ac3a40bdef33e.png" alt="Product 3">
+            <h4>Photography Masterclass</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/photography-masterclass/" target="_blank">Explore Now</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="head1">
+        <h2>Discover Our Diet Courses</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="products">
+          <!-- Product 1 -->
+          <div class="product">
+            <img src="https://learndrive.org/wp-content/uploads/2022/09/DietNutrition-1-310x174.png" alt="Product 1">
+            <h4>Nutrition, Food & Diet Training</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/nutrition-food-diet-training/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 2 -->
+          <div class="product">
+            <img src="https://learndrive.org/wp-content/uploads/2022/08/kito-310x174.png" alt="Product 2">
+            <h4>Keto Diet</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/keto-diet/" target="_blank">Explore Now</a>
+          </div>
+          <!-- Product 3 -->
+          <div class="product">
+            <img src="https://learndrive.org/wp-content/uploads/2022/08/Diet-Planning-and-Nutrition-310x174.png" alt="Product 3">
+            <h4>Diet and Weight Loss Coaching</h4>
+            <p><span style="text-decoration: line-through">£20.00</span> Get Only For <strong>£5.99</strong></p>
+            <a href="https://learndrive.org/course/diet-and-weight-loss-coaching/" target="_blank">Explore Now</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- Student ID Card Section 
+    <tr>
+      <td>
+        <div class="id-card-section">
+          <img src="https://via.placeholder.com/200x120" alt="Student ID Card">
+          <div class="id-card-content">
+            <h4>Your Student ID Card</h4>
+            <p>Get recognized as a student of our platform with your personalized Student ID card.</p>
+            <a href="#">Claim Your ID Card</a>
+          </div>
+        </div>
+      </td>
+    </tr> -->
+    <!-- Certificate Section -->
+
+   <tr>
+      <td style="align-content: center;text-align: center; margin: 20px 0;">
+      
+      
+      <a href="https://learndrive.org/order-certificate/" target="_blank">
+      <img src="https://learndrive.org/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-03-at-19.01.43_60be88d0.jpg" alt="Certificate" style="width: 55%">
+      
+      </a>
+       
+
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="certcont" style="text-align: center; font-size: 18px;line-height: 25px;padding:  0 20px 20px">
+      
+      
+      <h3 style="padding: 15px 2%;">Get Your CPDQE Accredited Certificate FREE with a Course!</h3>
+            <p style="padding: 5px 2% 20px;">Boost your resume and LinkedIn profile with valuable new skills. Showcase your achievements and connect with your professional network.</p>
+            <a href="https://learndrive.org/order-certificate/" target="_blank" style="display: inline-block;
+      padding: 10px 20px;
+      background-color: #635BFF;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;">Get Your Certificate</a>
+       
+
+        
+      </td>
+    </tr>
+   
+    <tr>
+      <td class="belowbanner">
+      
+      
+      <a href="https://learndrive.org/student-id-card/" target="_blank"><img src="https://img.mailinblue.com/8410637/images/content_library/original/676aa35e9b15d4e6cddb149a.png" alt="Special Discount on Student ID Card 50%"></a>
+       
+
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="footer" style="text-align: center;padding: 20px 2% 50px;font-size: 16px;">
+               <a href="https://learndrive.org/" target="_blank"><img src="https://learndrive.org/wp-content/uploads/2024/10/Logo-1.png" alt="Learndrive Logo" width="150"></a>
+
+       
+                <p style="text-align: center;padding: 5% 2%;">You are receiving this email because you purchased online courses from us.</p>
+
+        <p >10 East Stour Way, Ashford TN24 OSX, UK</p>
+        <p>Contact us at <span style="text-decoration: none;color: #fff;">info@learndrive.org</span> </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
